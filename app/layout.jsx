@@ -4,17 +4,20 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata = {
-  title: "Project A",
+  title: "Arthur Laroya",
   description: "arthur laroyas new portfolio",
   icons: {
-    icon: "/logo.svg",
+    icon: "/logo-colour.svg",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html className="scroll-smooth" lang="en">
-      <body className={GeistSans.className}>{children}</body>
+    <html
+      lang="en"
+      className={`scroll-smooth ${GeistSans.variable} ${GeistMono.variable} subpixel-antialiased`}
+    >
+      <body className="sans">{children}</body>
     </html>
   );
 }
